@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+	<servlet>
+		<servlet-name>CourseListServlet</servlet-name>
+		<servlet-class>com.example.registration.servlet.CourseListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CourseListServlet</servlet-name>
+		<url-pattern>/courses</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterStudentServlet</servlet-name>
+		<servlet-class>com.example.registration.servlet.RegisterStudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterStudentServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<servlet-class>com.example.registration.servlet.ScheduleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScheduleServlet</servlet-name>
+		<url-pattern>/schedule</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ResultsServlet</servlet-name>
+		<servlet-class>com.example.registration.servlet.ResultsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResultsServlet</servlet-name>
+		<url-pattern>/results</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FindRegistrationsServlet</servlet-name>
+		<servlet-class>com.example.registration.servlet.FindRegistrationsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindRegistrationsServlet</servlet-name>
+		<url-pattern>/findRegistrations</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>courses</welcome-file>
+	</welcome-file-list>
+
+</web-app>
